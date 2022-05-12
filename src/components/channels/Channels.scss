@@ -1,0 +1,50 @@
+.chats {
+  background-color: #111519;
+  color: #FFFFFF;
+  font-family: 'Avenir-Roman';
+
+  .chats-nav {
+    box-shadow: inset 0 -1px 0 0 #3E444E;
+    display: flex;
+    height: 32px;
+    justify-content: space-around;
+
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0 5px;
+      position: relative;
+
+      &.active-chat-nav-item {
+        &:before {
+          border-bottom: 2px solid #C92020;
+          bottom: 0;
+          content: '';
+          left: 0;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 16px 32px;
+
+    .icon {
+      align-items: center;
+      border: 1px solid #40454B;
+      border-radius: 100%;
+      color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 14px;
+      height: 22px;
+      justify-content: center;
+      width: 22px;
+    }
+  }
+}
